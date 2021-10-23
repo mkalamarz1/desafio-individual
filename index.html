@@ -15,11 +15,11 @@
             <h1>Cadastro Pessoal - Atração</h1> 
 
             <img id=img src="imagem/itau-unibanco.jpg" />
-            <form action="/pagina-processa-dados-do-form" method="post">
+            <form id="form" action="/pagina-processa-dados-do-form" method="post">
 
                 <div id="campoNome">
                     <label for="nome">Nome:</label>
-                    <input type="text" placeholder= "Obrigatório" />
+                    <input type="text" name='nome' placeholder= "Obrigatório" />
                 </div>
 
                 <div id="campoRg">
@@ -29,7 +29,7 @@
 
                 <div id="campoCpf">
                     <label for="Cpf">CPF:</label>
-                    <input type="number" placeholder= "Obrigatório" />
+                    <input type="number"  name='cpf' placeholder= "Obrigatório" />
                 </div>
 
                 <div id="campoSexo">
@@ -43,12 +43,12 @@
 
                 <div id="campoEndereco">
                     <label for="Endereco">Endereço:</label>
-                    <input type="text" placeholder= "Obrigatório" />
+                    <input type="text" name='endereco' placeholder= "Obrigatório" />
                 </div>
 
                 <div id="campoNumero">
                     <label for="numero">Numero:</label>
-                    <input type="number" placeholder= "Obrigatório"/>
+                    <input type="number" name='numero' placeholder= "Obrigatório"/>
                 </div>
 
                 <div id="campoEstado">
@@ -107,16 +107,53 @@
 
                 <div id="campoCelular">
                     <label for="Celular"> Telefone Celular:</label>
-                    <input type="number" placeholder= "Obrigatório" />
+                    <input type="number" name='celular' placeholder= "Obrigatório" />
                 </div>
 
-                <button>Enviar</button>
+                <button onclick="return validar()">Enviar</button>
             </form>
         </div>
 
     </div>
 
+    <script>
+        function validar(){
+            var validaNome = form.nome.value;
+            var validaCpf = form.cpf.value;
+            var validaEndereco = form.endereco.value;
+            var validaNumero = form.numero.value;
+            var validaCelular = form.celular.value;
 
+            if(validaNome == ""){
+                alert("Campo Nome precisa ser preenchido!");
+                form.nome.focus();
+                return false;
+            }
+            else if(validaCpf == ""){
+                alert("Campo Cpf precisa ser preenchido!");
+                form.cpf.focus();
+                return false;
+            }
+            else if(validaEndereco == ""){
+                alert("Campo Endereco precisa ser preenchido!");
+                form.endereco.focus();
+                return false;
+            }
+            else if(validaNumero == ""){
+                alert("Campo Numero precisa ser preenchido!");
+                form.numero.focus();
+                return false;
+            }
+            else if(validaCelular == ""){
+                alert("Campo Celular precisa ser preenchido!");
+                form.celular.focus();
+                return false;
+            }
+            else{
+                alert("Formulário preenchido com sucesso!");
+            }
+        }
+    </script>
         
 </body>
 </html>
