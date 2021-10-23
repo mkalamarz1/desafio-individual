@@ -16,64 +16,98 @@
 
             <img id=img src="imagem/itau-unibanco.jpg" />
             <form action="/pagina-processa-dados-do-form" method="post">
-                <div class="campo">
+
+                <div id="campoNome">
                     <label for="nome">Nome:</label>
-                    <input type="text" />
+                    <input type="text" placeholder= "Obrigatório" />
                 </div>
 
-                <div class="campo">
-                    <label for="Cpf"> Cpf:</label>
+                <div id="campoRg">
+                    <label for="Rg"> Rg:</label>
                     <input type="number" />
                 </div>
 
-                <div class="campo">
-                    <label for="Rg">Rg:</label>
-                    <input type="number" />
+                <div id="campoCpf">
+                    <label for="Cpf">Cpf:</label>
+                    <input type="number" placeholder= "Obrigatório" />
                 </div>
 
-                <div class="campo">
-                    <label for="nome">Sexo:</label>
-                    <input type="text"/>
+                <div id="campoSexo">
+                    <label for="Sexo"> Sexo:</label>
+                    <select name="Sexo">
+                        <option value="Nulo"> - </option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
                 </div>
 
-                <div class="campo">
-                    <label for="Endereço">Endereço:</label>
-                    <input type="text" />
+                <div id="campoEndereco">
+                    <label for="Endereco">Endereço:</label>
+                    <input type="text" placeholder= "Obrigatório" />
                 </div>
 
-                <div class="campo">
+                <div id="campoNumero">
                     <label for="numero">Numero:</label>
-                    <input type="number"/>
+                    <input type="number" placeholder= "Obrigatório"/>
                 </div>
 
-                <div class="campo">
+                <div id="campoEstado">
+                    <label for="Estado"> Estado:</label>
+                    <select name="estados-brasil">
+                        <option value="Nulo"> - </option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+	            </div>
+                
+                <div id="campoBairro">
                     <label for="Bairro">Bairro:</label>
-                    <input type="text" />
+                    <input type="text" /> 
                 </div>
                 
-                <div class="campo">
+                <div id="campoCidade">
                     <label for="Cidade"> Cidade:</label>
-                    <input type="text"/>
+                    <input type="text" /> 
                 </div>
 
-                <div class="campo">
-                    <label for="Estado">Estado:</label>
-                    <input type="text" />
-                </div>
-
-                <div class="campo">
+                <div id="campoCep">
                     <label for="Cep">Cep:</label>
                     <input type="number" />
                 </div>
 
-                <div class="campo">
+                <div id="campoTelefone">
                     <label for="Telefone">Telefone Fixo:</label>
                     <input type="number" />
                 </div>
 
-                <div class="campo">
-                    <label for="Celular">Celular:</label>
-                    <input type="number" />
+                <div id="campoCelular">
+                    <label for="Celular"> Telefone Celular:</label>
+                    <input type="number" placeholder= "Obrigatório" />
                 </div>
             </form>
         </div>
