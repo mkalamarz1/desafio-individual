@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seja bem-vindo o nosso cadastro</title>
+    <title>Cadastro Pessoal</title>
     <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 <body>
+    <!-- Bloco principal -->
     <div id="blocoPai">
 
+        <!-- Bloco interno -->
         <div id="blocoFilho">
+
+            <!-- Título -->
             <h1>Cadastro Pessoal - Atração</h1> 
 
+            <!-- Imagem do Itaú -->
             <img id=img src="imagem/itau-unibanco.jpg" />
+
+            <!-- Formulário -->
             <form id="form" action="/pagina-processa-dados-do-form" method="post">
 
                 <div id="campoNome">
@@ -47,7 +54,7 @@
                 </div>
 
                 <div id="campoNumero">
-                    <label for="numero">Numero:</label>
+                    <label for="numero">Número:</label>
                     <input type="number" name='numero' placeholder= "Obrigatório"/>
                 </div>
 
@@ -109,11 +116,11 @@
                     <label for="Celular"> Telefone Celular:</label>
                     <input type="number" name='celular' placeholder= "Obrigatório" />
                 </div>
-
+                
+                <!-- Botão do formulário -->
                 <button onclick="return validar()">Enviar</button>
             </form>
         </div>
-
     </div>
 
     <script>
@@ -140,7 +147,7 @@
                 return false;
             }
             else if(validaNumero == ""){
-                alert("Campo Numero precisa ser preenchido!");
+                alert("Campo Número precisa ser preenchido!");
                 form.numero.focus();
                 return false;
             }
