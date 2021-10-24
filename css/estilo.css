@@ -1,7 +1,8 @@
 body{
     margin: 0;
+    font-family: sans-serif;
 }
-/* Bloco principal */
+/* BLOCO PRINCIPAL */
 #blocoPai{
     background-color: #f5d020;
     background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
@@ -11,9 +12,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* Bloco interno */
+/* BLOCO INTERNO */
 #blocoFilho{
-    box-shadow: blue 10px 10px 10px;
     width: 80vw;
     height: 80vh;
     border-radius: 10px;
@@ -21,48 +21,48 @@ body{
     background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
     
 }
-/* Imagem do Itaú */
+/* IMAGEM DO ITAÚ */
 #img{
     width: 40%;
-    height: 98%;
+    height: 100%;
     display: block;
     float: left;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
-/* Título */
+/* TÍTULO */
 h1{
-    box-shadow: black 5px 5px 5px;
-    color: white;
+    color: black;
     display: inline-block;
-    width: 28%;
+    width: 40%;
     font-size: 25px;
     justify-content: center;
     border-radius: 10px;
-    margin-left: 150px;
-    background-color: #fdb813;
-    background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
-    padding: 15px;
+    margin-left: 120px;
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
-/* Formulário */
+/* FORMULÁRIO */
 form{
     margin: 10px;
     color: black;
     display: block;
     padding: 20px;
+    padding-left: 42%;
     font-weight: bold;
 }
 
 #campoNome{
-    display: flex;
-    margin-top: 20px;
+    display: flex;   
 }
 #campoNome label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoNome input{
     width: 100%;
-    border-radius: 10px;
+   
 }
 
 #campoRg{
@@ -71,11 +71,11 @@ form{
     margin-right: 20px;
 }
 #campoRg label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoRg input{
     width: 98px;
-    border-radius: 10px;
+   
 }
 
 #campoCpf{
@@ -83,22 +83,22 @@ form{
     margin-right: 20px;
 }
 #campoCpf label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoCpf input{
     width: 98px;
-    border-radius: 10px;
+   
 }
 
 #campoSexo{
     display: inline-block;
 }
 #campoSexo label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoSexo select{
     width: 90px;
-    border-radius: 10px;
+    
 }
 
 #campoEndereco{
@@ -107,11 +107,11 @@ form{
     margin-right: 5px;
 }
 #campoEndereco label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoEndereco input{
     width: 120px;
-    border-radius: 10px;
+    
 }
 
 #campoNumero{
@@ -119,10 +119,10 @@ form{
     margin-right: 5px;
 }
 #campoNumero label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoNumero input{
-    border-radius: 10px;
+    
     width: 50px;
 }
 
@@ -130,11 +130,9 @@ form{
     display: inline-block;
 }
 #campoEstado label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
-#campoEstado select{
-    border-radius: 10px;
-}
+
 
 #campoBairro{
     display: inline-block;
@@ -142,11 +140,11 @@ form{
     margin-right: 10px;
 }
 #campoBairro label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoBairro input{
     width: 100px;
-    border-radius: 10px;
+    
 }
 
 #campoCidade{
@@ -154,51 +152,50 @@ form{
     margin-right: 10px;
 }
 #campoCidade label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoCidade input{
     width: 100px;
-    border-radius: 10px;
+   
 }
 
 #campoCep{
     display: inline-block;
 }
 #campoCep label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoCep input{
     width: 80px;
-    border-radius: 10px;
+   
 }
 
 #campoTelefone{
     display: inline-block;
     margin-top: 20px;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 #campoTelefone label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 #campoTelefone input{
-    border-radius: 10px;
+    width: 100px;
 }
+
 
 #campoCelular{
     display: inline-block;
 }
 #campoCelular label{
-    padding-right: 10px;
+    padding-right: 5px;
 }
-#campoCelular input{
-    border-radius: 10px;
-}
-/* Botão do formulário */
+ 
+/* BOTÃO DO FORMULÁRIO */
 button{
     display: block;
-    width: 18%;
-    margin-left: 80%;
-    margin-top: 20px;
+    width: 25%;
+    margin-left: 75%;
+    margin-top: 35px;
     padding: 10px;
     color: black;
     background-color: white;
